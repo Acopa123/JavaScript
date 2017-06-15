@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="header">
+      <h1>Calculadora</h1>
+    </div>
+    <div id="calculadora">
+      <div id="operaciones">0</div>
+      <ul>
+        <li onClick="operaciones(this)">1</li>
+        <li onClick="operaciones(this)">2</li>
+        <li onClick="operaciones(this)">3</li>
+        <li onClick="digitos(this)">+</li>
+
+        <li onClick="operaciones(this)">4</li>
+        <li onClick="operaciones(this)">5</li>
+        <li onClick="operaciones(this)">6</li>
+        <li onClick="digitos(this)">-</li>
+
+        <li onClick="operaciones(this)">7</li>
+        <li onClick="operaciones(this)">8</li>
+        <li onClick="operaciones(this)">9</li>
+        <li onClick="digitos(this)">*</li>
+
+        <li onClick="decimal()">.</li>
+        <li onClick="operaciones(this)">0</li>
+        <li onClick="resultado()">=</li>
+        <li onClick="digitos(this)">/</li>
+      </ul>
+      <div id="borrar" onClick="borrar()">Borrar</div>
+    </div>
+    <script type="text/javascript" src="js/calculator.js"></script>`
+  </body>
+</html>
