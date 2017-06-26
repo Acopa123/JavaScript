@@ -8,7 +8,7 @@
 #slide{
   position: relative;
   margin: 0 auto;
-  width: 100%;
+  width: 65%;
   height: auto;
 }
 
@@ -39,15 +39,18 @@
   text-align: center;
   line-height: 25px;
   border-radius: 100%;
-  background-color: #111111;
-  color: #fff;
+  background-color: #fff;
+  color: #111111;
   margin-right: 5px;
   cursor: pointer;
   opacity: 6;
+  font-family: sans-serif;
 }
 
 #slide ol li:hover{
-  background-color: red;
+  transition: .3s;
+  background-color: #000;
+  color: #fff
 }
 
 #slide ol li:first-child{
@@ -64,7 +67,7 @@
   font-family: FontAwesome;
 	cursor:pointer;
   font-size: 30px;
-  color: #111111;
+  color: #fff;
 	}
 
 #next:before{
@@ -77,5 +80,5 @@
   font-family: FontAwesome;
 	cursor:pointer;
   font-size: 30px;
-  color: #111111;
+  color: #fff;
 	}
