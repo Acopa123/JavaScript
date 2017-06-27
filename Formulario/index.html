@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Validar Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <form method="post" action="php/validarFormulario.php" onSubmit="return validarFormulario()">
+      <h1>Ingrese sus datos</h1>
+
+      <label for="nombre" id="labelUsuario">Ingrese su Usuario:</label>
+      <input type="text" placeholder="Usuario" id="nombre" required onFocus="focusUsuario()" onBlur="blurUsuario()" onChange="changeUsuario()">
+
+      <label for="password" id="labelPassword">Ingrese su Contrasena:</label>
+      <input type="password" placeholder="Contraseña" id="password"  onFocus="focusPassword()" onBlur="blurPassword()" onChange="changePassword()">
+
+      <label for="email">Ingrese su Email:</label>
+      <input type="email" placeholder="Ejemplo: sucorreo@sudominio.com" id="email">
+
+      <label for="color">Elija su color:</label>
+      <select id="color">
+      	<option>Seleccione</option>
+          <option>Amarillo</option>
+          <option>Rojo</option>
+          <option>Azul</option>
+      </select>
+
+      <p>Seleccione Animal:</p>
+      <input type="checkbox" id="perro">
+      <label class="box" for="perro"><span></span>Perro</label>
+
+      <input type="checkbox" id="gato">
+      <label class="box" for="gato"><span></span>Gato</label>
+
+      <input type="checkbox" id="vaca">
+      <label class="box" for="vaca"><span></span>Vaca</label>
+
+      <p>Seleccione forma de pago:</p>
+      <input type="radio" id="efectivo" name="pago" checked>
+      <label class="radio" for="efectivo"><span></span>Efectivo</label>
+
+      <input type="radio" id="credito" name="pago">
+      <label class="radio" for="credito"><span></span>Crédito</label>
+
+      <label for="mensaje">Ingrese su mensaje:</label>
+      <textarea id="mensaje" rows="10"></textarea>
+
+      <input type="checkbox" id="terminos">
+      <label class="box" for="terminos"><span></span><a href="archivo.pdf" target="_blank">Acepto Términos y Codiciones</a></label>
+
+      <label id="labelEnviar"></label>
+      <input type="submit" value="Enviar">
+    </form>
+    <script src="js/formulario.js" type="text/javascript"></script>
+  </body>
+</html>
