@@ -1,0 +1,140 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: sans-serif;
+	}
+
+  body{
+    background-color: rgb(241, 241, 241);
+  }
+
+#lightbox{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,.9);
+	z-index: 1;
+	text-align: center;
+	display: none;
+	}
+
+#lightbox #cerrar{
+	position: absolute;
+	right: 17%;
+	top: 7.5vh;
+	padding: 25px;
+	color: red;
+	cursor: pointer;
+	transition: all 2s;
+	opacity: 0;
+	}
+
+#lightbox img{
+	position: relative;
+	margin: 10vh auto;
+	background: silver;
+	width: 60%;
+	height: 70vh;
+	left: -100%;
+	transition: all .5s;
+	border: 15px solid white;
+	}
+
+
+#seccion1{
+	position:relative;
+	margin:0 auto;
+	width:100%;
+	height:auto;
+	}
+
+#seccion1 ul{
+	position: relative;
+	margin: auto;
+	width: 90%;
+	text-align: center;
+	}
+
+#seccion1 ul li{
+	display: inline-block;
+	width: 18%;
+	margin: 12px;
+	cursor: pointer;
+	}
+
+#seccion1 ul li:hover{
+	opacity: .6;
+	}
+
+#seccion2{
+	width: 100%;
+	height: 5vh;
+	background: #2c3e50;
+  display: flex;
+  justify-content: flex-end;
+	}
+
+#registro{
+	color: #7e919e;
+  padding: 15px;
+  background-color: #546672;
+  margin-right: 20px;
+  cursor: pointer;
+  font-family: sans-serif;
+	}
+
+#form{
+	position: relative;
+	margin: auto;
+	width: 500px;
+	height: 300px;
+	background: #ddd;
+	top: 30vh;
+	border-radius: 5px;
+	}
+
+#form h1{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: #066;
+	color: white;
+	font-size: 20px;
+	border-radius: 5px 5px 0 0;
+	border-bottom: 5px solid black;
+	}
+
+#form input{
+	display: block;
+	padding: 10px;
+	width: 80%;
+	margin: 15px 8%;
+	}
+
+#form button{
+	display: block;
+	padding: 10px;
+	width: 85%;
+	margin: 15px 8%;
+	background: #066;
+	color: white;
+	border: 0;
+	cursor: pointer;
+	}
+
+#form h1 span{
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: #033;
+	color: white;
+	cursor: pointer;
+	}
