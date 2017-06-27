@@ -8,4 +8,4 @@
 - Movimientos paralelos con el Mouse.
 - Movimientos paralelos con el Scroll.
 - Recursos interactivos para Mobile.
-- Aprende a validar un formulario.
+- Validar un formulario.
