@@ -22,8 +22,8 @@
 
 #lightbox #cerrar{
 	position: absolute;
-	right: 17.3%;
-	top: 6vh;
+	right: 17%;
+	top: 7.5vh;
 	padding: 25px;
 	color: red;
 	cursor: pointer;
@@ -70,7 +70,7 @@
 
 #seccion2{
 	width: 100%;
-	height: 10vh;
+	height: 5vh;
 	background: #2c3e50;
   display: flex;
   justify-content: flex-end;
@@ -78,7 +78,7 @@
 
 #registro{
 	color: #7e919e;
-  padding: 20px 5px 20px 5px;
+  padding: 15px;
   background-color: #546672;
   margin-right: 20px;
   cursor: pointer;

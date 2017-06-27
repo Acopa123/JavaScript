@@ -1,5 +1,6 @@
 var itemImg = document.querySelectorAll("#seccion1 ul li img");
 var lightbox = document.querySelector("#lightbox");
+var cajaForm = '<div id="form"><h1>Registro de usuario <span onclick="cerrar()">X</span></h1><input type="text" placeholder="Usuario"><input type="password" placeholder="Contrasena"><input type="email" placeholder="E-mail"><button id="enviar">Enviar</button></div>';
 
 for (var i = 0; i < itemImg.length; i++) {
   itemImg[i].addEventListener("click", mostrarImg)
@@ -8,7 +9,7 @@ for (var i = 0; i < itemImg.length; i++) {
 function mostrarImg(e) {
   var atributo = e.target.src;
   lightbox.style.display = "block";
-  lightbox.innerHTML = '<img src="' + atributo + '"><div id="cerrar" onClick="close()">X</div>';
+  lightbox.innerHTML = '<img src="' + atributo + '"><div id="cerrar" onClick="cerrar()">X</div>';
 
   setTimeout(function() {
     document.querySelector("#lightbox img").style.left = 0;
@@ -17,7 +18,12 @@ function mostrarImg(e) {
 
 }
 
-function close() {
+function cerrar() {
   lightbox.style.display = "none";
   console.log('hola');
+}
+
+function mostrarForm() {
+  lightbox.style.display = "block";
+  lightbox.innerHTML = cajaForm;
 }
