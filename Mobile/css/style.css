@@ -1,0 +1,108 @@
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+  font-family: sans-serif;
+}
+
+header{
+	position:relative;
+	width:100%;
+	height:60px;
+	}
+
+button{
+	position:absolute;
+	width:50px;
+	height:50px;
+	cursor:pointer;
+	}
+
+nav{
+	position:absolute;
+	top:60px;
+	left:-100%;
+	width:250px;
+	height:auto;
+	background:#ddd;
+	border:1px solid #ccc;
+	transition:all .3s;
+	z-index:1;
+	}
+
+nav ul{
+	position:relative;
+	margin:auto;
+	width:250px;
+	}
+
+nav ul li{
+	display:block;
+	text-align:center;
+	line-height:60px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #fff;
+	background:linear-gradient(#ddd, #eee);
+	cursor:pointer;
+		}
+
+nav ul li:hover{
+	background:linear-gradient(#ccc, #ddd);
+	}
+
+nav ul li:first-child{
+	border-top:0;
+	}
+
+nav ul li:last-child{
+	border-bottom:0;
+	}
+
+#acordeon{
+	position:relative;
+	margin:auto;
+	width:100%;
+	height:auto;
+	}
+
+#acordeon h1{
+	position:relative;
+	width:100%;
+	line-height:60px;
+	text-align:center;
+	background:#ddd;
+	font-size:20px;
+	cursor:pointer;
+	}
+
+#acordeon h1:hover{
+
+	background:#aaa;
+
+	}
+
+
+#acordeon section{
+	position:relative;
+	width:100%;
+	height:0;
+	overflow:hidden;
+	border-top:1px solid #bbb;
+	border-bottom:1px solid #fff;
+	transition:all .3s;
+	}
+
+
+#acordeon section h2{
+	padding-bottom:5%;
+	}
+
+#acordeon section img{
+	width:90%;
+	padding-bottom:5%;
+	}
+
+#acordeon section p{
+	width:90%;
+	}
