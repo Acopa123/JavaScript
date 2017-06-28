@@ -4,6 +4,10 @@
   font-family: sans-serif;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -28,12 +32,17 @@ header nav ul {
 
 header nav ul li {
   padding: 16px;
+  cursor: pointer;
 }
 
 header nav ul li:hover {
   background-color: #95a5a6;
   transition: .4s;
   color: #ddd;
+}
+
+header nav ul li:focus {
+  background-color: red;
 }
 
 section{
@@ -49,11 +58,11 @@ section#sec1{
 	}
 
 section#sec2{
-	background:magenta;
+  background:magenta;
 	}
 
 section#sec3{
-	background:rgba(0,0,0,0);
+	background:rgba(0,0,0,255,0.5);
 	}
 
 
